@@ -4,7 +4,6 @@ import argparse
 import json
 import schedule
 import time
-import datetime
 from datetime import datetime
 n = 0
 f = open('test.json', 'w')
