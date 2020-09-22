@@ -25,7 +25,8 @@ class Monitor:
     percent_mem = "memory percent"
 
     def __repr__(self):
-        return " % s cpu_usage:% s memory_used:% s percent_mem:% s" % (self.name, self.cpu_usage, self.memory_used, self.percent_mem)
+        return " % s cpu_usage:% s memory_used:% s percent_mem:% s" % (
+            self.name, self.cpu_usage, self.memory_used, self.percent_mem)
 
 
 def job():
