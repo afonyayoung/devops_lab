@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 import requests
-auth = 'xafonya@gmail.com'
-passwd = 'CXen40cats'
+auth = 'your@email.com'
+passwd = 'yourpassword'
 
 
 def request(par):
