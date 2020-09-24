@@ -51,6 +51,7 @@ def job():
         f.close
         print(snapshot)
 
+
 def main():
     job()
     schedule.every(args.i).seconds.do(job)
