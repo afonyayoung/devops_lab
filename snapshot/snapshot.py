@@ -51,9 +51,9 @@ def job():
         f.close
         print(snapshot)
 
-
-job()
-schedule.every(args.i).seconds.do(job)
-while True:
-    schedule.run_pending()
-    time.sleep(1)
+def main():
+    job()
+    schedule.every(args.i).seconds.do(job)
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
