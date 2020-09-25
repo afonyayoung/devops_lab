@@ -1,12 +1,12 @@
 #! /usr/bin/env python
 import requests
-auth = 'xafonya@gmail.com'
-passwd = 'cxAfonya40cats'
+auth = 'your@email.com'
+passwd = 'yourPassword'
 
 
 def _request(par):
     response = requests.get(
-        'https://api.github.com/repos/alenaPy/devops_lab/pulls', params=par)
+        'https://api.github.com/repos/alenaPy/devops_lab/pulls', auth=(auth, passwd), params=par)
     test = response.json()
     return test
 
