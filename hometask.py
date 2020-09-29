@@ -31,7 +31,6 @@ with tempfile.TemporaryDirectory() as tmpdir:
         with zipfile.ZipFile(args.z.replace(".zip", "") + "_new.zip", "w") as zf:
             logging.info(f'Created new archive {args.z.replace(".zip", "") + "_new.zip"}')
             for dirpath, dirnames, files in os.walk(tmpdir):
-                zf.write(dirpath, dirpath.replace(tmpdir, ""))
                 for filename in files:
                     zf.write(os.path.join(dirpath, filename),
                              dirpath.replace(tmpdir, "") + '/' + filename)
